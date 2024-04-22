@@ -1,0 +1,72 @@
+.service-modal{
+    transform: scale(0);
+    transition: 0.3s;
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    @extend %get-center ;
+    .service-modal-content{
+        border: 2px solid $primary-color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 30px ;
+        @extend %get-center ;
+        flex-direction: column;
+        width: 280px;
+        height: 400px;
+        background-color: white;
+        gap: 15px;
+        h2{
+            color: $primary-color ;
+            font-size: 20px
+        }
+        form{
+            @extend %get-center ;
+            flex-direction: column;
+            gap: 40px;
+            .inputs{
+                @extend %get-center ;
+                flex-direction: column;
+                gap: 15px;
+            }
+            input{
+                width: 200px;
+                height: 30px;
+                border-radius: 30px;
+                outline: none;
+                border: 2px solid grey;
+                transition: .2s;
+                padding: 0 20px ;
+            }
+            input:focus{
+                height: 30px;
+                border: 2px solid $primary-color;
+            }
+            .buttons{
+                display: flex;
+                gap: 25px;
+                button{
+                    width: 90px;
+                    height: 30px;
+                    border-radius: 25px;
+                    border: 2px solid grey;
+                    color: white;
+                    background-color: $primary-color;
+                    cursor: pointer;
+                }
+                #cancel{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: brown;
+                    width: 90px;
+                    height: 27px;
+                    border-radius: 25px;
+                    border: 2px solid grey;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

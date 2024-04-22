@@ -1,0 +1,59 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   color: $primary-color;
+    min-height: 232px;
+    // color: white;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+  }
+  .icon{
+    margin: 0 4px;
+    padding: 6px 12px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  .card-location{
+    padding-right:50px;
+    min-height: 142px;
+    max-width: 380px;
+    line-height: 1.5rem;
+
+  }
+  .card-location h3{
+    min-height: 60px;
+    max-width: 255px;
+  }
+  .web{
+    min-height: 142px;
+    max-width: 380px;
+    line-height: 1.5rem;
+  }
+  .freelancer{
+    padding-left:50px;
+    line-height: 1.5rem;
+  }
+  .freelancer p{
+    min-height: 90px;
+    max-width: 356px;
+  }
+  @media only screen and (max-width:716px) {
+    .footer{
+     display: flex;
+     flex-direction: column;
+    }
+    .web{
+        line-height: 1.5;
+    }
+    .card-location{
+        line-height: 1.5;
+    }
+    .freelancer{
+        line-height: 1.5;
+    }
+ }

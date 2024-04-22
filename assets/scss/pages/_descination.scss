@@ -1,0 +1,133 @@
+.hero__descination {
+    height: 700px;
+    background-image: url(/assets/images/home.webp);
+    background-size: cover;
+    @extend %get-center;
+    font-family: "Roboto";
+    background-color: rgba(0, 0, 0, 0.447);
+    .bg {
+        @extend %get-center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.447);
+    .roboto-bold{
+        width: 60%;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+    }}
+}
+
+.about {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    .bg {
+      height: 500px;
+      width: 100%;
+      position: relative;
+      .color {
+        height: 100%;
+        width: 40%;
+        background-color: $primary-color;
+        @media screen and (max-width: 700px) {
+          width: 70%;
+        }
+      }
+  
+      img {
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 350px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-150px, -50%);
+        @media screen and (max-width: 700px) and (min-width: 430px) {
+          height: 250px;
+          transform: translate(-0px, -50%);
+        }
+        @media screen and (max-width: 430px) {
+          height: 150px;
+          transform: translate(-0px, -50%);
+        }
+      }
+    }
+    .right {
+      @extend %get-center;
+  
+      flex-direction: column;
+      text-align: start;
+      h1 {
+        padding: 0 150px;
+  
+        font-size: 20px;
+        color: $primary-color;
+        margin-bottom: 10px;
+      }
+      p {
+        padding: 0 150px;
+        color: grey;
+      }
+      @media screen and (max-width: 700px) {
+        h1,
+        p {
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+  .special{
+    height: 100%;
+    padding: 100px 0;
+    font-family: "Roboto";
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        img{
+            min-height: 313px;
+            max-width: 261px;
+            margin: 25px;
+            object-fit: cover;
+        }
+        .card{
+            min-height: 383px;
+            max-width: 261px;
+          margin: 3rem;
+          .card__city{
+            font-size: 20px;
+            margin: 20px;
+          }
+          .country{
+            color: #aaaaaacc;
+            padding-left: 20px;
+            margin: 15px;
+            i{
+                margin-right: 5px;
+
+            }
+          }
+        }
+    }
+    h2{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bold;
+        color: $primary-color;
+        margin: 0 0 8px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: center;
+    }
+    p{
+        max-width: 546px;
+        min-height: 63px;
+      margin: 1rem auto;
+      line-height: 1.2;
+      color:#aaaaaacc;
+    }
+ 
+}

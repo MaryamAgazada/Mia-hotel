@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotell</title>
+
+    <!-- ICONS / FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS/SCSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Custom JS -->
+    <script type="module" src="./assets/js/app.js" defer></script>
+    <script type="module" src="./assets/js/script.js" defer></script>
+    <!-- Moment JS -->
+    <script src="./assets/js/moment.js" defer></script>
+    <!-- <script src="./assets/js/modal.js" defer></script> -->
+    <!-- Sweet   Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header/Navbar Started -->
+    <header class="header">
+      <div class="container">
+        <h1 class="roboto-bold">Mia Hotell</h1>
+        <ul class="nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./descination.html">Destination</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="contact-number">
+          <i class="fa-solid fa-phone"></i>
+          <span>123-4567-8910</span>
+        </div>
+      </div>
+      <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="fa-solid fa-bars"></i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
+    </header>
+    <!-- Header ended here -->
+
+    <!-- See Video Modal -->
+
+    <div class="see-modal">
+      <div class="video-frame">
+        <i class="fa-solid fa-xmark de-active-btn"></i>
+        <video width="520" height="300" controls>
+          <source
+            src="./assets/images/1110917_Oriental_Street_Handsome_1280x720.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h2 class="roboto-bold">Our Video</h2>
+      </div>
+    </div>
+
+    <!-- See Video Modal Ended -->
+
+    <!-- Add Service Modal -->
+    <div class="service-modal">
+      <div class="service-modal-content">
+        <h2 class="roboto-light">Add New Servise</h2>
+        <form>
+          <div class="inputs">
+            <input type="text" name="" id="icon" placeholder="Icon name" />
+            <input type="text" minlength="3" id="title" placeholder="Title" />
+            <input type="text" minlength="10" id="text" placeholder="Content" />
+          </div>
+          <div class="buttons">
+            <button type="submit" id="submit">Submit</button>
+            <a id="cancel">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Add Service Modal Ended  -->
+
+    <!-- Card Details Modal -->
+    <div class="detail">
+      <div class="detail-card">
+        <h1 class="roboto-bold">Title</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil et
+          iste obcaecati, rerum sapiente, eveniet perspiciatis non voluptas, cum
+          beatae excepturi hic. Sint, sit voluptatem! Debitis deleniti facilis
+          possimus sapiente?
+        </p>
+        <span class="close">close</span>
+      </div>
+    </div>
+
+    <!-- Card Details Modal Ended -->
+
+    <!-- Blog Card Detail -->
+    <div class="blog-detail">
+      <div class="detail-card">
+        <div>
+          <img src="./assets/images/img_2.jpg.webp" alt="">
+        </div>
+        <h1 class="roboto-bold">Title</h1>
+        <p>
+        </p>
+        <span class="close">close</span>
+      </div>
+    </div>
+    <!-- Blog Card Detail Ended -->
+
+    <!-- Blog Card Edit -->
+
+    <div class="blog-edit">
+      <div class="detail-card">
+        <div>
+          <img src="./assets/images/img_2.jpg.webp" alt="">
+        </div>
+        <form action="">
+          <label for="edit" class="roboto-bold">Edit Title</label>
+          <input name="edit" class="edit" type="text" >
+          <label for="" class="inputreque roboto-bold">Input cannot be empty!</label>
+          <button class="submit">Submit</button>
+        </form>
+        <span class="close">close</span>
+      </div>
+    </div>
+    </div>
+
+    <!-- Blog Card Edit Ended -->
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="bg">
+          <h1 class="roboto-bold">
+            Once a year go someplace you've never been before.
+          </h1>
+          <div class="see-video-btn roboto-light">
+            <span>see video</span>
+          </div>
+        </div>
+      </section>
+      <!-- Services -->
+      <section class="our-services">
+        <div class="find">
+          <input type="text" placeholder="search sevice" />
+          <i class="fa-solid fa-magnifying-glass search-btn"></i>
+          <select name="" id="sort">
+            <option value="" disabled selected hidden>Sorting</option>
+            <option value="none">Show All</option>
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
+          </select>
+        </div>
+        <span class="service-title">Our Services</span>
+        <i class="fa-solid fa-plus add-service"></i>
+        <div class="card-list"></div>
+        <div class="service-buttons roboto-medium">
+          <span id="prev">Prev</span>
+          <span id="next">Next</span>
+        </div>
+      </section>
+      <!-- About -->
+      <section class="about">
+        <div class="left col-6 col-md-12 col-sm-12">
+          <div class="bg">
+            <div class="color"></div>
+            <img src="./assets/images/home.webp" alt="" />
+          </div>
+        </div>
+        <div class="right col-6 col-md-12 col-sm-12">
+          <div>
+            <h1 class="roboto-bold">About Hotell</h1>
+            <p class="roboto-light">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </p>
+            <p class="roboto-light">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <h1 class="roboto-bold">Blog Posts</h1>
+          <div class="blog-card-list">
+            
+        </div>
+        <div class="blog-buttons">
+          <span id="prev" class="roboto-light">Prev</span>
+          <span id="next" class="roboto-light">Next</span>
+        </div>
+      </section>
+
+      <section class="faqs">
+        <h2 class="roboto-bold">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="accordion">
+          <div class="quiz  ">
+            <div class="question">
+              <h1 class="roboto-light">Is it free?</h1>
+              <i class="fa-regular fa-circle-up"></i>
+            </div>
+            <p class="answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+              A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          </div>
+          <div class="quiz">
+            <div class="question">
+              <h1 class="roboto-light">How to install this template?</h1>
+              <i class="fa-regular fa-circle-up"></i>
+            </div>
+            <p class="answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+              A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          </div>
+          <div class="quiz  ">
+            <div class="question">
+              <h1 class="roboto-light">Where can i get help?</h1>
+              <i class="fa-regular fa-circle-up"></i>
+              
+            </div>
+            <p class="answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+              A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="card-location">
+          <h3 class="location">Location</h3>
+          <p>2215 John Daniel Drive
+              Clark, MO 65243
+              </p>
+      </div>
+     <div class="web">
+      <h3>AROUND THE WEB</h3>
+      <div class="icons">
+      <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+      <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+      <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+      <div class="icon"><i class="fa-solid fa-basketball"></i></div>
+  </div>
+     </div>
+     <div class="freelancer">
+      <h3>ABOUT FREELANCER</h3>
+      <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap .</p>
+     </div>
+  </footer>
+  </body>
+</html>
